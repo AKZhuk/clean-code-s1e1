@@ -25,12 +25,17 @@
 }
 .main {
   display: block;
-  width: 400px;
+  width: 500px;
   margin: 0 auto 0;
 }
+.input-text,
 .task {
   width: 56%;
   display: inline-block;
+  flex-grow: 1
+}
+.task-row-wrapper {
+  display: flex;
 }
 .list {
   margin: 0;
@@ -100,6 +105,9 @@ button{
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .list__item > * {
   vertical-align: middle;
